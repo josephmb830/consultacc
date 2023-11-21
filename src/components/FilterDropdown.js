@@ -6,9 +6,9 @@ const FilterDropdown = ({ label, options, defaultOption }) => {
   return (
     <Form.Group>
       <Form.Label>{label}</Form.Label>
-      <Form.Control as="select" multiple>
-        {options.map((option) => (
-          <option key={option} value={option}>
+      <Form.Control as="select" defaultValue={defaultOption}>
+        {options.map((option, index) => (
+          <option key={index} value={option}>
             {option}
           </option>
         ))}

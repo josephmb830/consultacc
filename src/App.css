@@ -8,8 +8,45 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: #f5f5f5; /* Cambiar el fondo de la web a un gris claro */
 }
 
+.card-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.navy-card {
+  background-color: #001f3f; /* Azul marino */
+  color: #ffffff; /* Texto blanco */
+  display: flex;
+}
+
+.dark-blue-card {
+  background-color: #004080; /* Azul oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.light-blue-card {
+  background-color: #0074cc; /* Azul claro */
+  color: #ffffff; /* Texto blanco */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Sección de InputFields, ButtonGroup, CtaCteSection, FilterSection */
 .input-fields,
 .button-group,
 .ctacte-section,
@@ -23,4 +60,44 @@ body {
 .button-group button {
   margin-top: 10px;
   display: block;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-check {
+  margin-bottom: 20px;
+}
+
+/* Nuevos estilos para centrado y espacio en la sección de filtros */
+.row.justify-content-center {
+  text-align: center;
+}
+
+/* Añadir márgenes a los Dropdowns */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Añadir espacio entre los checkbox y los dropdowns */
+.form-check {
+  margin-top: 10px;
+}
+
+
+/* En tu archivo App.css o donde tengas tus estilos */
+.input-fields {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna (uno sobre otro) */
+}
+
+/* Agregar espacio entre elementos dentro de InputFields */
+.input-fields label,
+.input-fields input {
+  margin-bottom: 10px; /* Puedes ajustar el valor según tus preferencias */
 }

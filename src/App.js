@@ -9,10 +9,31 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <InputFields />
-      <ButtonGroup />
-      <CtaCteSection />
-      <FilterSection />
+      {/* Sección de InputFields y ButtonGroup en la misma card */}
+      <div className="card-container">
+        <div className="card navy-card d-flex">
+          <div className="flex-grow-1">
+            <InputFields />
+          </div>
+          <div className="flex-grow-1">
+            <ButtonGroup />
+          </div>
+        </div>
+      </div>
+
+      {/* Sección de CtaCte en card azul oscuro */}
+      <div className="card-container">
+        <div className="card dark-blue-card">
+          <CtaCteSection />
+        </div>
+      </div>
+
+      {/* Sección de Filtros en card azul claro */}
+      <div className="card-container">
+        <div className="card light-blue-card">
+          <FilterSection />
+        </div>
+      </div>
     </div>
   );
 }
