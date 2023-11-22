@@ -5,7 +5,6 @@ const ButtonGroup = () => {
   return (
     <div className="button-group">
       <button>Consultar Cta.Cte.</button>
-      <button>Imprimir</button>
     </div>
   );
 };
