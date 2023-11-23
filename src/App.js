@@ -10,7 +10,43 @@ import './App.css';
 function App() {
   return (
     <>
-      
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="codigo" class="form-label">Código</label>
+              <input id="codigo" class="form-control" type="text" placeholder="Ingrese Código"></input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="codigo" class="form-label">Código</label>
+              <input id="codigo" class="form-control" type="text" placeholder="Ingrese Código"></input>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-12">
+             col-sm-4
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              col-sm-4
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+      </div>
+    </div>
+
       <div className="container">
 
         <div className="row">
