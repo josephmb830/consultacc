@@ -50,10 +50,28 @@ function App() {
 
       {/* Sección de Filtros en card azul claro */}
       <div className="card-container">
-        <div className="card dark-blue-card">
-          <FiltersInputSection />
-          <FilterSection />
+
+        <div className="row"> 
+
+          <div className="col-lg-6">
+
+            <div className="card dark-blue-card">
+              <FiltersInputSection />
+            </div>
+
+          </div>
+
+          <div className="col-lg-6">
+
+            <div className="card dark-blue-card">
+              <FilterSection />
+            </div>
+
+          </div>
+
+
         </div>
+       
       </div>
 
       {/* Sección de CtaCte en card azul oscuro */}

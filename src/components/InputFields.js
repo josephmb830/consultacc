@@ -12,8 +12,8 @@ const InputFields = () => {
   return (
     <div className="input-fields">
       {/* Código de Contribuyente */}
-      <label>Codigo de Contribuyente:</label>
-      <input type="number" placeholder="Ingrese código"class="form-control" />
+      <label class="input-fields__text">Codigo de Contribuyente:</label>
+      <input class="input-fields__input form-control" type="number" placeholder="Ingrese código" />
 
       {/* Código de Predio */}
       <label>Codigo de Predio:</label>

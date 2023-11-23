@@ -18,23 +18,11 @@ const FilterSection = () => {
   return (
     <Container>
       <div className="filter-group">
-        <Row className="justify-content-center">
-          <Col md={8}>
-            <div className="text-center p-4">
-              <Form>
-                <Row>
-                  {/* Fecha de Proyección */}
-                  <label>Fecha de Proyeccion:</label>
-                  <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
-                  <Col md={6}>
-                    <FilterDropdown label="Denominacion de la Materia" options={materiaOptions} defaultOption={materiaOptions[0]} />
-                    <FilterDropdown label="Situacion de Deuda" options={situacionOptions} defaultOption={situacionOptions[0]} />
-                  </Col>
-                </Row>
-              </Form>
-            </div>
-          </Col>
-        </Row>
+        {/* Fecha de Proyección */}
+        <label>Fecha de Proyeccion:</label>
+        <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
+        <FilterDropdown label="Denominacion de la Materia" options={materiaOptions} defaultOption={materiaOptions[0]} />
+        <FilterDropdown label="Situacion de Deuda" options={situacionOptions} defaultOption={situacionOptions[0]} />
       </div>
     </Container>
   );
