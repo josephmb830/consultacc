@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import InputFields from './components/InputFields';
+import Datos from './components/Datos';
 import ButtonGroup from './components/ButtonGroup';
 import CtaCteSection from './components/CtaCteSection';
 import FilterSection from './components/FilterSection';
@@ -19,6 +20,9 @@ function App() {
               <label for="codigo" class="form-label">Código</label>
               <input id="codigo" class="form-control" type="text" placeholder="Ingrese Código"></input>
             </div>
+            <div class="col-sm-8 card navy-card">
+              <Datos />
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
@@ -27,23 +31,26 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 card medium-ocean-card">
           <div class="row">
             <div class="col-sm-12">
-             col-sm-4
+              <ButtonGroup />
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
-              col-sm-4
+              <ButtonGroup />
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
+        <div class="col-sm-6 card dark-blue-card">
+          <FiltersInputSection />
+        </div>
+        <div class="col-sm-6 card dark-blue-card">
+          <FilterSection />
+        </div>
       </div>
     </div>
 

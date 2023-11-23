@@ -3,8 +3,7 @@ import React from 'react';
 
 const ButtonGroup = () => {
   return (
-    <div className="button-group col-sm-4">
-      <button>Consultar Cta.Cte.</button>
+    <div className="button-group">
       <button>Consultar Cta.Cte.</button>
     </div>
   );
