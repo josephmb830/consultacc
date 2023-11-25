@@ -14,7 +14,7 @@ const FiltersInputSection = () => {
   const tipoOptions = ['Detallado', 'Agrupado Trimestralmente'];
 
   return (
-    <div className="filter-group">
+    <div className="form-control">
       <FilterDropdown label="Procedencia" options={procedenciaOptions} defaultOption={procedenciaOptions[0]} />
       <FilterDropdown label="Tipo" options={tipoOptions} defaultOption={tipoOptions[1]} />
       <Form.Group>

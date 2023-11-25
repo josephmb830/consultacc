@@ -4,12 +4,12 @@ import React from 'react';
 const CtaCteSection = () => {
   return (
 
-    <div className="ctacte-section">
+    <div className="form-control">
       {/* Sección de cuenta corriente */}
       <h2 class="ctacte-section__title">Cuenta Corriente</h2>
       {/* Aquí deberías implementar la lógica para mostrar los datos de la cuenta corriente */}
       <div className="">
-        <button>Imprimir</button>
+        <button class="btn btn-secondary">Imprimir</button>
       </div>
     </div>
     

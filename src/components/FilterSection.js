@@ -17,7 +17,7 @@ const FilterSection = () => {
 
   return (
     <Container>
-      <div className="filter-group">
+      <div className="form-control">
         {/* Fecha de Proyección */}
         <label>Fecha de Proyeccion:</label>
         <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
