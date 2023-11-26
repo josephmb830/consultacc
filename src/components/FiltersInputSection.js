@@ -1,25 +1,17 @@
 // src/components/FiltersInputSection.js
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import FilterDropdown from './FilterDropdown';
 
 const FiltersInputSection = () => {
-  const procedenciaOptions = [
-    'Todas las Procedencias',
-    'SUB GERENCIA ADMINISTRACION TRIBUTARIA',
-    'SUB GERENCIA DE FISCALIZACION',
-    'SUB GERENCIA DE EJECUTORIA COACTIVA',
-  ];
-
-  const tipoOptions = ['Detallado', 'Agrupado Trimestralmente'];
 
   return (
-    <div className="form-control">
-      <FilterDropdown label="Procedencia" options={procedenciaOptions} defaultOption={procedenciaOptions[0]} />
-      <FilterDropdown label="Tipo" options={tipoOptions} defaultOption={tipoOptions[1]} />
+    <div className="">
       <Form.Group>
         <Form.Check type="checkbox" label="Aplicar dscto. varios" defaultChecked />
       </Form.Group>
+      {/* Fecha de Proyección */}
+      <label>Fecha de Proyeccion:</label>
+      <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
     </div>
   );
 };

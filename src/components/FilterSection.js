@@ -17,10 +17,7 @@ const FilterSection = () => {
 
   return (
     <Container>
-      <div className="form-control">
-        {/* Fecha de Proyección */}
-        <label>Fecha de Proyeccion:</label>
-        <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
+      <div className="">
         <FilterDropdown label="Denominacion de la Materia" options={materiaOptions} defaultOption={materiaOptions[0]} />
         <FilterDropdown label="Situacion de Deuda" options={situacionOptions} defaultOption={situacionOptions[0]} />
       </div>

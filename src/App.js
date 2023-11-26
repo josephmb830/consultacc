@@ -1,9 +1,9 @@
 // src/App.js
 import React from 'react';
-import InputFields from './components/InputFields';
 import Datos from './components/Datos';
 import Codigo from './components/Codigo';
 import ButtonGroup from './components/ButtonGroup';
+import Procedencia from './components/Procedencia';
 import CtaCteSection from './components/CtaCteSection';
 import FilterSection from './components/FilterSection';
 import FiltersInputSection from './components/FiltersInputSection';
@@ -15,26 +15,22 @@ function App() {
     <form>
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
-            <div class="row">
-              <div class="col-sm-2">
-                <Codigo />
-              </div>
-              <div class="col-sm-10">
-                <Datos />
-              </div>
-            </div>
-          </div>
           <div class="col-sm-4">
+            <Codigo />
+          </div>
+          <div class="col-sm-5">
+            <Datos />
+          </div>
+          <div class="col-sm-3">
             <ButtonGroup />
           </div>
         </div>
-        <div class="row">
+        <div class="row" className="form-control d-flex">
           <div class="col-sm-4">
-          <InputFields />
+            <Procedencia />
           </div>
           <div class="col-sm-4">
-          <FiltersInputSection />
+            <FiltersInputSection />
           </div>
           <div class="col-sm-4">
             <FilterSection />
