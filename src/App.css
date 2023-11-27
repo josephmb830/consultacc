@@ -1,15 +1,14 @@
 /* src/App.css */
-/* colors: 
-    #3E97D1
-    #65A6D1
-    #0A67A3
-    #24587A
-    #03426A
-*/
+
 .consulta-button {
     margin-bottom: 10px;
   }
 
   .form-control {
     background-color: blanchedalmond;
+  }
+
+  .custom-filter-dropdown {
+    max-height: 38px;
+    overflow: hidden;
   }

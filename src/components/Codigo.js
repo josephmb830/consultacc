@@ -9,15 +9,24 @@ const Codigo = () => {
 
   return (
     <div className='form-control'> 
-      <label for="codigo" class="form-label">Código Contribuyente:</label>
-      <input id="codigo" class="form-control" type="text" placeholder="Ingrese Código" />
-      
-        {/* Código de Predio */}
-       <label>Codigo de Predio:</label>
-      <input type="number" placeholder="Ingrese código"class="form-control" />
+      {/* Código Contribuyente */}
+      <div className="d-flex">
+        <label for="codigo" className="form-label flex-1 col-sm-5">Código Contribuyente:</label>
+        <input id="codigo" className="form-control flex-1" type="text" placeholder="Ingrese Código" />
+      </div>
 
-      <FilterDropdown label="Años de Deuda" options={anioOptions} defaultOption={anioOptions[0]} />
-    
+      {/* Código de Predio */}
+      <div className="d-flex">
+        <label className="col-sm-4">Codigo de Predio:</label>
+        <input type="number" placeholder="Ingrese código" className="form-control" />
+      </div>
+
+      <div className='d-flex'>
+        <label className="col-sm-4">Años de Deuda:</label>
+        <dic className="custom-filter-dropdown">
+          <FilterDropdown options={anioOptions} defaultOption={anioOptions[0]} />
+        </dic>
+      </div>
     </div>
   );
 };
