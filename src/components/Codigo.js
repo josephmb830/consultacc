@@ -9,23 +9,28 @@ const Codigo = () => {
 
   return (
     <div className='form-control'> 
+      
+      <h5 className='subtitulo'>Filtros Principales</h5>
+      
       {/* Código Contribuyente */}
       <div className="d-flex">
-        <label for="codigo" className="form-label flex-1 col-sm-5">Código Contribuyente:</label>
+        <label for="codigo" className="label flex-1 col-sm-6">Código Contribuyente:</label>
         <input id="codigo" className="form-control flex-1" type="text" placeholder="Ingrese Código" />
       </div>
 
       {/* Código de Predio */}
       <div className="d-flex">
-        <label className="col-sm-4">Codigo de Predio:</label>
+        <label className="label col-sm-5">Codigo de Predio:</label>
         <input type="number" placeholder="Ingrese código" className="form-control" />
       </div>
 
       <div className='d-flex'>
-        <label className="col-sm-4">Años de Deuda:</label>
-        <dic className="custom-filter-dropdown">
+        <label className="label col-sm-5">Años de Deuda:</label>
+        <div className="custom-filter-dropdown">
           <FilterDropdown options={anioOptions} defaultOption={anioOptions[0]} />
-        </dic>
+        </div>
+      </div>
+      <div className='espaciadop'> 
       </div>
     </div>
   );

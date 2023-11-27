@@ -17,10 +17,20 @@ const FilterSection = () => {
 
   return (
     <Container>
-      <div className="">
-        <FilterDropdown label="Denominacion de la Materia" options={materiaOptions} defaultOption={materiaOptions[0]} />
-        <FilterDropdown label="Situacion de Deuda" options={situacionOptions} defaultOption={situacionOptions[0]} />
+      <div className="d-flex">
+        <label className="label col-sm-5">D. de la Materia:</label>
+        <div className="custom-filter-dropdown">
+          <FilterDropdown options={materiaOptions} defaultOption={materiaOptions[0]} />
+        </div>
       </div>
+      
+      <div className="d-flex">
+        <label className="label col-sm-5">Situación Deuda:</label>
+        <div className="custom-filter-dropdown">
+         <FilterDropdown options={situacionOptions} defaultOption={situacionOptions[0]} />
+        </div>
+      </div>
+      
     </Container>
   );
 };

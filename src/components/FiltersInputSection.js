@@ -7,10 +7,10 @@ const FiltersInputSection = () => {
   return (
     <div className="">
       <Form.Group>
-        <Form.Check type="checkbox" label="Aplicar dscto. varios" defaultChecked />
+        <Form.Check className="label" type="checkbox" label="Aplicar dscto. varios" defaultChecked />
       </Form.Group>
       {/* Fecha de Proyección */}
-      <label>Fecha de Proyeccion:</label>
+      <label className='label'>Fecha de Proyeccion:</label>
       <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
     </div>
   );
