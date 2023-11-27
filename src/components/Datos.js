@@ -18,7 +18,7 @@ const Datos = () => {
           <label className="label col-lg-12 " >Nombre :</label>
         </div>
         <div>
-          <span className=''>______________Nombre del Contribuyente____________</span>
+          <span className=''>______________{persona.nombre}____________</span>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const Datos = () => {
       {/* Segundo grupo */}
       <div className=" col-sx-12 d-flex">
         <label className="label">Direccion : </label>
-        <span>_____________Dirección del Contribuyente___________</span>
+        <span>_____________{persona.direccion}___________</span>
       </div>
 
       <div className='espaciadox'> 
@@ -39,3 +39,13 @@ const Datos = () => {
 };
 
 export default Datos;
+
+function cambiarNombre (objeto) {
+  objeto.nombre = 'Nuevo nombre'
+}
+
+let persona = { nombre: 'Nombre del Contribuyente', direccion: 'Dirección del Contribuyente'}
+
+//cambiarNombre(persona)
+
+console.log(persona) 

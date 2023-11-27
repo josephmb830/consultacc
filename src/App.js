@@ -3,12 +3,12 @@ import React from 'react';
 import Logo from './components/Logo';
 import Titulo from './components/Titulo';
 import Datos from './components/Datos';
-import Codigo from './components/Codigo';
+import FiltrosPrincipales from './components/FiltrosPrincipales';
 import ButtonGroup from './components/ButtonGroup';
 import Procedencia from './components/Procedencia';
 import CtaCteSection from './components/CtaCteSection';
 import FilterSection from './components/FilterSection';
-import FiltersInputSection from './components/FiltersInputSection';
+import DsctoFecha from './components/DsctoFecha';
 import './App.css';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         </div>
         <div class="row" className='principal d-flex'>
           <div class="mright col-sm-4">
-            <Codigo />
+            <FiltrosPrincipales />
           </div>
           <div class="mright col-sm-5">
             <Datos />
@@ -36,10 +36,10 @@ function App() {
           </div>
         </div>
         <div class="row" className="principal form-control">
-          <h5 className='subtitulo'>Filtros Principales</h5>
+          <h5 className='subtitulo'>Filtros Secundarios</h5>
           <div className='d-flex'>
             <div class="col-sm-4">
-              <FiltersInputSection />
+              <DsctoFecha />
             </div>
             <div class="col-sm-4">
               <Procedencia />

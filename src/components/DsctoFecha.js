@@ -1,8 +1,8 @@
-// src/components/FiltersInputSection.js
+// src/components/DsctoFecha.js
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
-const FiltersInputSection = () => {
+const DsctoFecha = () => {
 
   return (
     <div className="">
@@ -16,4 +16,4 @@ const FiltersInputSection = () => {
   );
 };
 
-export default FiltersInputSection;
+export default DsctoFecha;
