@@ -9,7 +9,7 @@ const Datos = () => {
 
       <h5 className='subtitulo'>Datos</h5>
 
-      <div className='espaciadom'> 
+      <div className='espaciadom'>
       </div>
 
       {/* Primer grupo */}
@@ -18,20 +18,20 @@ const Datos = () => {
           <label className="label col-lg-12 " >Nombre :</label>
         </div>
         <div>
-          <span className=''>______________{persona.nombre}____________</span>
+          <span className=''>______________{contribuyente.nombre}____________</span>
         </div>
       </div>
 
-      <div className='espaciadom'> 
+      <div className='espaciadom'>
       </div>
 
       {/* Segundo grupo */}
       <div className=" col-sx-12 d-flex">
         <label className="label">Direccion : </label>
-        <span>_____________{persona.direccion}___________</span>
+        <span>_____________{contribuyente.direccion}___________</span>
       </div>
 
-      <div className='espaciadox'> 
+      <div className='espaciadox'>
       </div>
 
     </div>
@@ -40,12 +40,7 @@ const Datos = () => {
 
 export default Datos;
 
-function cambiarNombre (objeto) {
-  objeto.nombre = 'Nuevo nombre'
-}
 
-let persona = { nombre: 'Nombre del Contribuyente', direccion: 'Dirección del Contribuyente'}
+let contribuyente = { nombre: 'Nombre del Contribuyente', direccion: 'Dirección del Contribuyente' }
 
-//cambiarNombre(persona)
-
-console.log(persona) 
+console.log(contribuyente)

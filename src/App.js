@@ -48,7 +48,7 @@ function App() {
               <FilterSection />
             </div>
           </div>
-          <div className='espaciadom'> 
+          <div className='espaciadom'>
           </div>
         </div>
         <div class="row">
