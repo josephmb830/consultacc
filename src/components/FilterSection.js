@@ -1,6 +1,6 @@
 // src/components/FilterSection.js
 import React from 'react';
-import { Container, Row, Col, Form, Card } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import FilterDropdown from './FilterDropdown';
 
 const FilterSection = () => {
@@ -23,14 +23,14 @@ const FilterSection = () => {
           <FilterDropdown options={materiaOptions} defaultOption={materiaOptions[0]} />
         </div>
       </div>
-      
+
       <div className="d-flex">
         <label className="label col-sm-5">Situación Deuda:</label>
         <div className="custom-filter-dropdown">
          <FilterDropdown options={situacionOptions} defaultOption={situacionOptions[0]} />
         </div>
       </div>
-      
+
     </Container>
   );
 };
